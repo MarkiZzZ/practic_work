@@ -5,24 +5,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title></title>
 </head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
-</script>
-<script type="text/javascript">
-    function getJson()
-    {
-        $.getJSON('json.json',AddItem());
-    }
-    function AddItem()
-    {
-        var array =
-        array.forEach(AddPic);
-    }
-    function AddPic(url)
-{
-    var images = "<img class='image' src="+ url +">";
-    $(".cell_box").append(images);
-}
-</script>
 <body class="content_box">
 <div class="content">
 <div class="header">
