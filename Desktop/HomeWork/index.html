@@ -1,0 +1,106 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title></title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script type="text/javascript">
+    function getJson()
+    {
+        $.getJSON('json.json',AddItem());
+    }
+    function AddItem()
+    {
+        var array =
+        array.forEach(AddPic);
+    }
+    function AddPic(url)
+{
+    var images = "<img class='image' src="+ url +">";
+    $(".cell_box").append(images);
+}
+</script>
+<body class="content_box">
+<div class="content">
+<div class="header">
+    <div class="home_btn">
+        <i class="fa fa-home fa-2x"></i>
+    </div>
+    <div class="logo_container">
+        <div class="logo"></div>
+    </div>
+    <div class="profile_btn_container">
+        <img class="profile_btn" src="images/avatar.png">
+    </div>
+</div>
+<div class="menu"></div>
+<div class="middle">
+    <div class="item_info_box">
+        <div class="item_info">
+            <img class="profile_ava" src="images/avatar.png">
+            <div class="description">
+                Lorem ipsum dolor<br>
+                sit amet, consectetur<br>
+                adipisicing elit,<br>
+                sed do eiusmod.
+            </div>
+            <div class="follow_btn_box">
+                <input type="button" class="follow_btn" onclick="AddItem()" value="Following">
+            </div>
+        </div>
+        <div class="follow">
+            <div class="followers">
+                <p class="caption">Followers</p>
+                <p class="text">666</p>
+            </div>
+            <div class="following">
+                <p class="caption">Followers</p>
+                <p class="text">666</p>
+            </div>
+        </div>
+        <div class="page_link"></div>
+        <div class="AlsoRecommended">ALSO RECOMMENDED</div>
+        <div class="similar_page">
+            <img class="profile_btn" src="images/avatar_rec.png">
+            <div class="similar_info">
+                Name   <br>
+                Description
+            </div>
+        </div>
+        <div class="similar_page">
+            <img class="profile_btn" src="images/avatar_rec.png">
+            <div class="similar_info">
+                Name   <br>
+                Description
+            </div>
+        </div>
+        <div class="similar_page">
+            <img class="profile_btn" src="images/avatar_rec.png">
+            <div class="similar_info">
+                Name   <br>
+                Description
+            </div>
+        </div>
+        <div class="similar_page">
+            <img class="profile_btn" src="images/avatar_rec.png">
+            <div class="similar_info">
+                Name   <br>
+                Description
+            </div>
+        </div>
+        <div class="similar_page">
+            <img class="profile_btn" src="images/avatar_rec.png">
+            <div class="similar_info">
+                Name   <br>
+                Description
+            </div>
+        </div>
+    </div>
+    <div class="cell_box"></div>
+</div>
+</div>
+</body>
+</html>
